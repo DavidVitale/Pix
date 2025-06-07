@@ -8,7 +8,7 @@ class Animation:
         self.animation_speed = 0.2
         self.frame_timer = 0
 
-        # Extract frames from sprite sheet
+        # Extract frames from a sprite sheet
         for i in range(num_sprites):
             original_frame = pygame.Surface((sprite_width, sprite_height), pygame.SRCALPHA)
             original_frame.blit(sprite_sheet, (0, 0),
@@ -40,14 +40,14 @@ def load_animation(path, sprite_width, sprite_height, num_sprites, scale=1.0):
     sprite_sheet = pygame.image.load(path).convert_alpha()
     return Animation(sprite_sheet, sprite_width, sprite_height, num_sprites, scale)
 
-def create_enemy_placeholder(enemy_type, size=(64, 64), color=(255, 0, 0)):
-    surface = pygame.Surface(size, pygame.SRCALPHA)
-    width, height = size
-    pygame.draw.rect(surface, color, (0, 0, width, height))
-    # Add text to placeholder
-    font = pygame.font.SysFont('Arial', 12)
-    text = font.render(enemy_type, True, (255, 255, 255))
-    text_rect = text.get_rect(center=(width / 2, height / 2))
-    surface.blit(text, text_rect)
+# def create_enemy_placeholder(enemy_type, size=(64, 64), color=(255, 0, 0)):
+#     surface = pygame.Surface(size, pygame.SRCALPHA)
+#     width, height = size
+#     pygame.draw.rect(surface, color, (0, 0, width, height))
+#     # Add text to placeholder
+#     font = pygame.font.SysFont('Arial', 12)
+#     text = font.render(enemy_type, True, (255, 255, 255))
+#     text_rect = text.get_rect(center=(width / 2, height / 2))
+#     surface.blit(text, text_rect)
 
     return surface

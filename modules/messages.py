@@ -1,4 +1,5 @@
 from collections import deque
+
 from constants import MAX_MESSAGES
 
 

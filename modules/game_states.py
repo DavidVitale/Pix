@@ -1,9 +1,6 @@
 import pygame
-import time
-import random
-from modules.enemy_dic import generate_enemy
-from characters import Enemy,Hero
-from constants import TITLE_SCREEN, ADVENTURE_MENU, GAMEPLAY, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK, RED, WHITE
+
+from constants import TITLE_SCREEN, ADVENTURE_MENU, GAMEPLAY, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK
 from modules.ui import Button, draw_stat_panel, draw_message_panel
 
 
