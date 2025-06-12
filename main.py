@@ -156,7 +156,7 @@ def main():
             gameplay.draw()
 
             enemy_x_pos = SCREEN_WIDTH // 2 + 75
-            enemy_y_pos = SCREEN_HEIGHT // 2 - 75
+            enemy_y_pos = SCREEN_HEIGHT // 2 - 100
             if hasattr(enemy, 'image') and enemy.image is not None:
                 screen.blit(enemy.image, (enemy_x_pos, enemy_y_pos))
             else: print('Enemy image not loaded properly')
@@ -166,7 +166,7 @@ def main():
             name_text = font.render(f"{enemy.name}", True, WHITE)  # Removed "Name:" prefix
 
             # Position the text above the rectangle
-            name_pos = (SCREEN_WIDTH // 2 + 200 - name_text.get_width() // 2, SCREEN_HEIGHT // 2 - 100)
+            name_pos = (SCREEN_WIDTH // 2 + 200 - name_text.get_width() // 2, SCREEN_HEIGHT // 2 - 150)
 
             # Draw only the name text
             screen.blit(name_text, name_pos)
@@ -175,7 +175,7 @@ def main():
 
             # Draw hero and enemy animations
             hero_animation.draw(screen, hero.x - 64, hero.y - 64)
-            enemy_animation.draw(screen, enemy.x - 8, enemy.y - 64)
+            enemy_animation.draw(screen, enemy.x + 170, enemy.y - 64)
 
         # Update the display
         pygame.display.flip()
