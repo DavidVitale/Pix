@@ -90,8 +90,6 @@ def main():
 
     print_enemy_stats(enemy)
 
-
-
     # Initialize game states
     title_screen = TitleScreen(screen, title_font, button_font, title_img)
     adventure_menu = AdventureMenu(screen, button_font, adventure_background, adventure_panel_img, message_system)

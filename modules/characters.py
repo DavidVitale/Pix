@@ -169,6 +169,10 @@ class Enemy:
     @property
     def name(self):
         return self.stats.name
+
+    @property
+    def health_percentage(self):
+        return self.stats.hp / self.stats.max_hp
         
     @property
     def level(self):

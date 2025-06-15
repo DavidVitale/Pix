@@ -20,7 +20,7 @@ WHITE = (255, 255, 255)
 
 # Placeholder dimensions for enemies from Characters
 DEFAULT_SIZE = 32
-PLACEHOLDER_COLOR = (255, 0, 0)  # Red
+PLACEHOLDER_COLOR = (255, 0, 0)  # Redh
 ENEMY_SIZE = (64, 64)
 # Player size
 PLAYER_SIZE = (64, 64)
